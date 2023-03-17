@@ -1,0 +1,23 @@
+# Execute these files, in order, to accomplish a full load of the ETL:
+
+redshift_athena_compat_udfs.sql
+cloudstats_dim_account_names.sql
+cloudstats_dim_pricing_buckets.sql
+cloudstats_dim_instance_specs.sql
+cloudstats_dim_aws_products.sql
+cloudstats_00.sql
+cloudstats_01.sql
+cloudstats_create.sql
+cloudstats_full_load.sql
+cloudstats_bill_create.sql
+cloudstats_bill_full_load.sql
+cloudstats_bill_iceberg.sql
+cloudstats_cpu_ratecard.sql
+cloudstats_wow_cost_movers.sql
+cloudstats_buying_efficiency.sql
+
+
+# A daily incremental build only needs to run these queries:
+
+cloudstats_incremental_load.sql
+cloudstats_bill_incremental_load.sql
