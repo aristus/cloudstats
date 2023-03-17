@@ -2,7 +2,7 @@
 
 This ETL works from the raw AWS Cost & Usage Report (CUR). It is implemented as a series of SQL statements with no out-of-band processing. See `aws/dag-full-load.txt` for the order of queries.
 
-See also this [very long article about cloud cost control](https://carlos.bueno.org/2023/03/aws-dismal.html) in general and how to use Cloudstats on AWS in particular.
+See also this [very long article about cloud cost control](https://carlos.bueno.org/2023/03/aws-dismal-guide.html) in general and how to use Cloudstats on AWS in particular.
 
 The hope is that Cloudstats gives you a clean basis for your capacity planning and efficiency work. This work is based on experience with large AWS accounts over many years. Its accuracy is not guaranteed, but there are built-in ways to check its completeness and consistency.
 
